@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SIMWA COMPANY LIMITED</title>
+    <link rel="stylesheet" href="style.css">
+    <a href="https://wa.me/254798797309" class="whatsapp-btn" target="_blank">
+  💬
+</a>
+
+<button id="back-to-top">Top</button>
+
+</head>
+
+
+
+<body>
+ <!-- Navbar -->
+  <header class="navbar">
+    <h2>SIMWA COMPANY LIMITED</h2>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#services">Services</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <button id="get-quote" class="quote-btn">Get Quote</button>
+
+  </header>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <div class="overlay">
+      <h1>Building Your Vision, Creating Reality</h1>
+      <p>Professional construction services you can trust.</p>
+        <h2>Building-Renovations - Plumbing - Electrical - General Construction Work</h2>
+      <button id="get-started">Get Started</button>
+
+    </div>
+  </section>
+
+
+  <!-- Services -->
+  <section id="services" class="services">
+    <h2>Our Services</h2>
+    <div class="cards">
+
+      <div class="card">
+          <h3>Residential Construction</h3>
+          <p>We build dream homes with quality materials, expert craftsmanship, and attention to detail — from single-family houses to apartment complexes.</p>
+      </div>
+
+      <div class="card">
+          <h3>Commercial Projects</h3>
+          <p>We handle commercial construction including offices, retail spaces, warehouses, and industrial buildings, delivering on time and within budget.</p>
+      </div>
+
+      <div class="card">
+          <h3>Renovations</h3>
+          <p>Transform your space with our renovation services — remodeling, extensions, interior upgrades, and complete makeovers.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects" class="projects">
+    <h2>Recent Projects</h2>
+    <div class="cards">
+
+        <a href="apartment.html" class="card">
+      <img src="images/project1.jpg" alt="">
+      <h3>APARTMENT COMPLEX</h3>
+      <p>Nairobi</p>
+    </a>
+
+        <a href="mantions.html" class="card">
+        <img src="images/project2.jpg" alt="">
+      <h3>MANTIONS & BUNGALOWS</h3>
+      <p>Ruai</p>
+    </a>
+
+        <a href="villas.html" class="card">
+      <img src="images/project3.jpg" alt="">
+      <h3>LUXURY VILLAS</h3>
+      <p>Karen</p>
+    </a>
+
+
+    </div>
+  </section>
+
+ <!--CONTACT-->
+ <section id="contact" class="contact">
+     <h2>CONTACT US</h2>
+     <p>EMAIL: mwgijames@gmail.com</p>
+     <p>PHONE: +254720616942 / +254798797309 / +254720956293</p>
+ </section>
+
+  <!-- CTA -->
+  <section class="cta">
+    <h2>Ready to Build Your Project?</h2>
+    <button id="get-free-quote"class="quote-btn">Get Free Quote</button>
+<script>
+document.getElementById('get-free-quote').addEventListener('click', () => {
+  window.open('https://wa.me/254798797309?text=Hello!%20I%20would%20like%20a%20free%20quote.', '_blank');
+});
+</script>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2026 Simwa Construction Company Limited. All rights reserved.</p>
+  </footer>
+
+<script>
+const backToTop = document.getElementById('back-to-top');
+
+window.addEventListener('scroll', () => {
+  if (window.scrollY > 300) {
+    backToTop.style.display = 'block';
+  } else {
+    backToTop.style.display = 'none';
+  }
+});
+
+backToTop.addEventListener('click', () => {
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+});
+</script>
+
+<!--GET BUTTONS-->
+<script>
+  const getStartedBtn = document.getElementById('get-started');
+  const getQuoteBtn = document.getElementById('get-quote');
+
+  getStartedBtn.addEventListener('click', () => {
+    document.getElementById('services').scrollIntoView({ behavior: 'smooth' });
+  });
+
+  getQuoteBtn.addEventListener('click', () => {
+    document.getElementById('contact').scrollIntoView({ behavior: 'smooth' });
+  });
+</script>
+
+</body>
+
+</html>
